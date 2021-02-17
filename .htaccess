@@ -1,0 +1,8 @@
+Options All -Indexes
+
+ErrorDocument 404 /E404.php
+
+RewriteEngine On
+
+RewriteRule ^([^.]+)/([^.]+)$ download.php?file=$2.$1
+RewriteRule ^([^.]+)/([^.]+)/$ download.php?file=$2.$1
